@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: spartan;
+}
+.design1 {
+	position: absolute;
+	width: 40%;
+}
+.design2 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 60%;
+}
+#container {
+	margin: 0 auto;
+	width: 1200px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.9fr 1fr 0.1fr;
+	grid-template-areas: 
+	"topL topL topL topR topR topR"
+	"box1 box1 box2 box2 box3 box3"
+	"attr attr attr attr attr attr";
+}
+#topL {
+	padding-top: 60px;
+	padding-left: 30px;
+	grid-area: topL;
+}
+h1 {
+	width: 400px;
+	line-height: .95;
+	font-size: 35pt;
+	color: hsl(300, 43%, 22%);
+}
+h2 {
+	width: 450px;
+	padding-top: 30px;
+	color: hsl(0, 0%, 66%);
+	font-weight: 400;
+	font-size: 12pt;
+	line-height: 1.5;
+}
+#topR {
+	padding: 60px;
+	grid-area: topR;
+}
+.rate1 {
+	transform: translatex(-10%);
+	vertical-align: middle;
+	display: flex;
+	margin: 20px;
+	height: 50px;
+	background-color: rgb(255, 221, 250);
+	border-radius: 10px;
+}
+.rate2 {
+	vertical-align: middle;
+	display: flex;
+	margin: 20px;
+	height: 50px;
+	background-color: rgb(255, 221, 250);
+	border-radius: 10px;
+}
+.rate3 {
+	transform: translatex(10%);
+	vertical-align: middle;
+	display: flex;
+	margin: 20px;
+	height: 50px;
+	background-color: rgb(255, 221, 250);
+	border-radius: 10px;
+}
+.stars {
+	position: relative;
+	top: 17px; left: 30px;
+}
+.starText {
+	position: relative;
+	top: 15px;
+	margin-left: 40px;
+	font-weight: 700;
+	font-size: 10pt;
+	color: hsl(300, 43%, 22%);
+}
+.box1 {
+	grid-area: box1;
+	width: 350px;
+	height: 230px;
+	border-radius: 10px;
+	background-color: hsl(300, 43%, 22%);
+	margin: 0 auto;
+
+}
+.box2 {
+	transform: translateY(10%);
+	grid-area: box2;
+	width: 350px;
+	height: 230px;
+	border-radius: 10px;
+	background-color: hsl(300, 43%, 22%);
+	margin: 0 auto;
+}
+.box3 {
+	transform: translateY(20%);
+	grid-area: box3;
+	width: 350px;
+	height: 230px;
+	border-radius: 10px;
+	background-color: hsl(300, 43%, 22%);
+	margin: 0 auto;
+}
+.ident {
+	margin: 30px;
+}
+h3 {
+	font-weight: 700;
+	padding-top: 10px;
+	margin-left: 60px;
+	color: white;
+	font-size: 10pt;
+}
+h4 {
+	padding-top: 5px;
+	color: hsl(295, 38%, 55%);
+	font-weight: 400;
+	margin-left: 60px;
+	font-size: 10pt;
+}
+.ident img {
+	position: absolute;
+	margin-right: 60px;
+	width: 50px;
+	border-radius: 100px;
+}
+p {
+	margin: 0 auto;
+	width: 80%;
+	line-height: 2;
+	color: white;
+	font-size: 9pt;
+}
+.attribution {
+	grid-area: attr;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
